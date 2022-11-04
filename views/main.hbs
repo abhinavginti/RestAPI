@@ -1,0 +1,13 @@
+<h1>PRODUCTS</h1>
+
+<div class="cards">
+    {{#each products}}
+    <div class="card glassmorphism">
+        <a href={{this.url}}>
+            <p>{{this.name}}</p>
+            <p><span class="fw-bold">Size: </span>{{this.size}}</p>
+            <p>&#x20b9; {{this.price}}</p>
+        </a>
+    </div>
+    {{/each}}
+</div>
